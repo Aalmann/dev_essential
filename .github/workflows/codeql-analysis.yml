@@ -40,6 +40,11 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+      
+    - name: Install gcc-8
+      run: |
+          sudo apt-get update
+          sudo apt-get install gcc-8
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL

@@ -52,7 +52,8 @@ jobs:
         # queries: ./path/to/local/query, your-org/your-repo/queries@main
 
     - run: |
-       cmake -H . -B _build -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX=_install
+       mkdir _build && cd _build
+       cmake .. -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX=_install
        cmake --build . --target INSTALL --config RelWithDebInfo
 
     - name: Perform CodeQL Analysis

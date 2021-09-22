@@ -54,7 +54,7 @@ jobs:
     - run: |
        mkdir _build && cd _build
        cmake .. -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX=_install -DCMAKE_BUILD_TYPE=RelWithDebInfo
-       cmake --build . --target INSTALL --config RelWithDebInfo
+       cmake --build . --target install --config RelWithDebInfo
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1

@@ -44,7 +44,7 @@ jobs:
     - name: Install gcc-8
       run: |
           sudo apt-get update
-          sudo apt-get install -y gcc-8 g++-8
+          sudo apt-get install -y gcc-7 g++-7
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL

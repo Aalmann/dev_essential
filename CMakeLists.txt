@@ -91,3 +91,4 @@ endif(dev_essential_cmake_enable_integrated_tests)
 
 # License Information must be delivered anyway!
 install(FILES README.md DESTINATION ${CMAKE_INSTALL_PREFIX})
+install(FILES LICENSE DESTINATION ${CMAKE_INSTALL_PREFIX})
